@@ -1,0 +1,127 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f6fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header elements */
+.logo {
+  background-color: #2d3436;
+  color: #fff;
+  padding: 20px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.logo p {
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.search {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.search input[type="text"] {
+  width: 50%;
+  max-width: 400px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Login link */
+.login {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login a {
+  text-decoration: none;
+  color: #0984e3;
+  font-weight: bold;
+  padding: 8px 16px;
+  border: 1px solid #0984e3;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.login a:hover {
+  background-color: #0984e3;
+  color: #fff;
+}
+
+/* Product sections */
+.hero1, .hero2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.item1, .item2 {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 250px;
+  text-align: center;
+  padding: 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.item1:hover, .item2:hover {
+  transform: translateY(-5px);
+}
+
+.itme-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.item1 p, .item2 p {
+  margin: 10px 0;
+}
+
+button {
+  background-color: #00b894;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #019170;
+}
+
+/* Footer */
+.footer {
+  background-color: #2d3436;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 30px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2d3436;
+  padding: 20px;
+}

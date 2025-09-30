@@ -1,0 +1,297 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+/* أساسيات */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #1c1c1c;
+  color: #f0f0f0;
+  line-height: 1.6;
+}
+
+/* الهيدر والنافبار */
+header {
+  background-color: #252525;
+  padding: 15px 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.logo-text {
+    color: #ff4757;
+    margin: 0;
+}
+.nav-logo{
+    text-decoration: none;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-link {
+  color: #f0f0f0;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #ff6b81;
+}
+
+/* الأقسام */
+section {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section-title {
+  color: #ff6b81;
+  font-size: 28px;
+  border-bottom: 2px solid #ff4757;
+  padding-bottom: 10px;
+  margin-bottom: 40px;
+}
+
+/* قسم الهيرو */
+.hero-section .section-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero-details {
+  flex: 1 1 400px;
+}
+
+.hero-details .title {
+  font-size: 32px;
+  color: #ff6b81;
+}
+
+.hero-details .subtitle {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.hero-details .description {
+  margin-bottom: 20px;
+}
+
+.hero-img-wrapper {
+  flex: 1 1 300px;
+}
+
+.hero-image {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* الأزرار */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff4757;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-right: 10px;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #ff6b81;
+}
+
+/* قسم About */
+.about-section .section-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+
+.about-image-wrapper {
+  flex: 1 1 300px;
+}
+
+.about-image {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.about-details {
+  flex: 1 1 400px;
+}
+
+/* قائمة الأنمي */
+.anime-section .anime-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.anime-item {
+  background-color: #2c2c2c;
+  border-radius: 6px;
+  overflow: hidden;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.anime-item:hover {
+  background-color: #3b3b3b;
+}
+
+.anime-image {
+  width: 100%;
+  display: block;
+}
+
+.anime-item a {
+  display: block;
+  padding: 10px;
+  color: #f0f0f0;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.anime-item:hover a {
+  color: #fff;
+}
+
+/* المصممين (Swiper) */
+.Designers-section .slider-container {
+  position: relative;
+}
+
+.testimonials-list {
+  padding: 0;
+  margin: 0;
+}
+
+.testimonial {
+  background-color: #2c2c2c;
+  padding: 20px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.user-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.name {
+  color: #ff6b81;
+  margin: 10px 0;
+}
+
+.feedback {
+  display: block;
+  font-style: italic;
+}
+
+/* أسهم السلايدر */
+.swiper-button-prev,
+.swiper-button-next {
+  color: #ff4757;
+}
+
+.swiper-pagination-bullet {
+  background: #ff4757;
+}
+
+/* قسم التواصل */
+.Contact-section .contact-info-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.contact-info i {
+  margin-right: 10px;
+  color: #ff4757;
+}
+
+.contact-info p {
+  margin: 0;
+}
+
+/* الفورم */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-input {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #3b3b3b;
+  color: #f0f0f0;
+}
+
+.form-input:focus {
+  outline: none;
+  background-color: #4b4b4b;
+}
+
+.submit-button {
+  padding: 10px 20px;
+  background-color: #ff4757;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #ff6b81;
+}
+
+/* الهواتف */
+@media (max-width: 768px) {
+  .nav-menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .hero-section .section-content,
+  .about-section .section-content {
+    flex-direction: column;
+  }
+}
